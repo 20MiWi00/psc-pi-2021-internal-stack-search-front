@@ -8,10 +8,12 @@ export const ProjectInfo = ({data:{projectName,department,client,budget,startDat
                 <div>
                     <Typography  variant="h5">Dział : {department} </Typography>
                     <Typography  variant="h5">Budżet : {budget}zł </Typography>
+                    <br></br>
                     <Typography  variant="h5">Data rozpoczęcia : </Typography>
                     <Typography  variant="h5">{new Date(startDate).toLocaleDateString('en-GB', { timeZone: 'UTC' })} </Typography>
                     <Typography  variant="h5">Data zakończenia : </Typography>
                     <Typography  variant="h5">{new Date(endDate).toLocaleDateString('en-GB', { timeZone: 'UTC' })} </Typography>
+                    <br></br>
                     <Typography  variant="h5">Użyte technologie:</Typography> 
                     {projectTechnologies.map(x => {
                         return(
